@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mezo Dent SRO</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4fbff;
+      color:#333;
+    }
+
+    header{
+      background:#00a8cc;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .hero{
+      height:400px;
+      background:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1200')
+      center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero h1{
+      background:rgba(0,0,0,0.5);
+      padding:20px;
+      border-radius:10px;
+      font-size:48px;
+    }
+
+    section{
+      padding:50px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#00a8cc;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    button{
+      background:#00a8cc;
+      color:white;
+      border:none;
+      padding:12px 25px;
+      border-radius:8px;
+      cursor:pointer;
+      margin-top:15px;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#007c99;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mezo Dent SRO</h1>
+
+    <nav>
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Сучасна стоматологічна клініка</h1>
+  </div>
+
+  <section id="about">
+    <h2>Про клініку</h2>
+    <br>
+    <p>
+      Mezo Dent SRO — професійна стоматологічна клініка з сучасним обладнанням 
+      та досвідченими лікарями. Ми дбаємо про здорову та красиву усмішку.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Наші послуги</h2>
+    <br>
+
+    <div class="services">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800">
+        <h3>Лікування зубів</h3>
+        <p>Якісне лікування карієсу та інших проблем.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800">
+        <h3>Відбілювання</h3>
+        <p>Професійне відбілювання зубів.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588776814546-ec7e4d7dcb3f?q=80&w=800">
+        <h3>Імплантація</h3>
+        <p>Сучасні імпланти та протезування.</p>
+      </div>
+
+    </div>
+
+    <button onclick="showMessage()">
+      Записатися
+    </button>
+
+  </section>
+
+  <section id="contact">
+    <h2>Контакти</h2>
+    <br>
+    <p>📍 Адреса: </p>
+    <p>📞 Телефон: +380 00 000 00 00</p>
+    <p>✉ Email: mezodent@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Mezo Dent SRO. Всі права захищені.</p>
+  </footer>
+
+  <script>
+    function showMessage(){
+      alert("Дякуємо! Ми скоро зв'яжемося з вами.");
+    }
+  </script>
+
+</body>
+</html>
